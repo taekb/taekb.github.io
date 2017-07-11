@@ -1,79 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <meta name="author" content="Daniel Jeong" />
-    <meta property="og:url" content="http://taekb.github.io" />
-    <meta property="og:type" content="website" />
-    <title>Daniel Jeong</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-  </head>
+<head>
+  <title>Daniel Jeong</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="author" content="Daniel Jeong">
+  <meta property="og:url" content="http://taekb.github.io">
+  <meta property="og:type" content="website">
   <style>
-    #mainlogo {
-      max-width:100%;
-      max-height:100%;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333333;
-    }
-    li {
+  h1 {
+    font-family: 'Courier New';
+    font-size: 40px;
+    font-color: white;
+    background-color: black;
+  }
+  #mainlogo {
+    max-width:100%;
+    max-height:100%;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  li {
       float: left;
-    }
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 16px;
-      text-decoration: none;
-    }
-    li a:hover {
-      background-color:#111111;
-    }
-    </style>
-  <body>
-    <div>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/cv">CV</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </div>
-    <div align="center">
-      <img src="/mainlogo.png" id="mainlogo" width="1300">
-    </div>
-    <div background="white">
-      <h2 align="center">Hi! My name is Daniel Jeong.</h1>
-      <p align="center">I am a first-year student pursuing a Bachelor of Science degree in Computer Science at Columbia University, Class of 2020.</br>
-	    My current areas of interest are: machine learning, robotics, and information security.
-      </p>
-    </div><!-- ./defaultbody -->
-    <footer>
-      <ul>
-        <li><a href="mailto:dpj2108@columbia.edu">email</a></li>
-        <li><a href="https://github.com/taekb">My Github Page</a></li>
-      </ul>
-    </footer>
-  </body>
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color:#111111;
+  }
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <h1 id="title">Hi! I'm Daniel.</h1>
+  </div>
+  <hr>
+  </br>
+  <div class="intro" background="white">
+    <p align="center">I am a rising sophomore pursuing a Bachelor of Science degree in Computer Science at Columbia University, Class of 2020.</br></br> My current areas of interest are: Machine Learning (and AI in general), Software Engineering, and Space Exploration.</p>
+  </div>
+  <footer>
+    <ul>
+      <li><a href="mailto:dpj2108@columbia.edu">daniel.jeong@columbia.edu</a></li>
+      <li><a href="https://github.com/taekb">My Github Page</a></li>
+    </ul>
+  </footer>
+</body>
 </html>
