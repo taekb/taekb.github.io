@@ -25,7 +25,7 @@
     overflow: hidden;
     background-color: #333333;
   }
-  li {
+  .category-list {
       float: left;
   }
   li a {
@@ -47,18 +47,29 @@
 </head>
 <body>
   <div class="header">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/contact">Contact</a></li>
+    <ul class="category-list">
+      <li class="category"><a href="/">Home</a></li>
+      <li class="category"><a href="/about">About</a></li>
+      <li class="category"><a href="/projects">Projects</a></li>
+      <li class="category"><a href="/contact">Contact</a></li>
     </ul>
     <h1 id="title">Hi! I'm Daniel.</h1>
   </div>
   <hr>
   </br>
   <div class="intro" background="white">
-    <p align="center">I am a rising sophomore pursuing a Bachelor of Science degree in Computer Science at Columbia University, Class of 2020.</br></br> My current areas of interest are: Machine Learning (and AI in general), Software Engineering, and Space Exploration.</p>
+    <ul>
+      <li>
+        <div class="intro-photo">
+          <img src="/img/columbia.jpg" width=200 height=200>
+        </div>
+      </li>
+      <li>
+        <div class="intro-intro">
+          <p align="center">I am a rising sophomore pursuing a Bachelor of Science degree in Computer Science at Columbia University, Class of 2020.</br></br> My current areas of interest are: Machine Learning (and AI in general), Software Engineering, and Space Exploration.</p>
+        </div>
+      </li>
+    </ul>
   </div>
   <footer>
     <ul>
