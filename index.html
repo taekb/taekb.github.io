@@ -1,89 +1,444 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Daniel Jeong</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-  <meta name="author" content="Daniel Jeong">
-  <meta property="og:url" content="http://taekb.github.io">
-  <meta property="og:type" content="website">
-  <style>
-  h1 {
-    font-family: 'Courier New';
-    font-size: 40px;
-    font-color: white;
-    text-align: center;
-  }
-  ul {
-    list-style-type: none;
-  }
-  #mainlogo {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  .category-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-  }
-  .category {
+<html lang="en">
+  <head>
+    <title>Daniel Jeong</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="author" content="Daniel Jeong">
+    <meta property="og:url" content="http://taekb.github.io">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo:200i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/taekb.io/images/favicon-32x32.png" sizes="32x32">
+    <style>
+    /* Body */
+    body {
+      margin: 0;
+    }
+
+    /* Navigation Bar */
+    .nav_bar {
+      overflow: hidden;
+      background-color: rgba(255,255,255,0.975);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+    } 
+    .nav_home {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 10px;
+      margin-right: 0;
+      padding: 0;
       float: left;
-  }
-  .intro-list {
-    display: inline;
-    list-style-type: none;
-    overflow: hidden;
-  }
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
-  li a:hover {
-    background-color:#111111;
-  }
-  hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  }
-  </style>
-</head>
-<body>
-  <div class="header">
-    <ul class="category-list">
-      <li class="category"><a href="/">Home</a></li>
-      <li class="category"><a href="/about">About</a></li>
-      <li class="category"><a href="/projects">Projects</a></li>
-      <li class="category"><a href="/contact">Contact</a></li>
-    </ul>
-    <h1 id="title">Hi! I'm Daniel.</h1>
-  </div>
-  <hr>
-  </br>
-  <div class="intro" background="white">
-    <ul class="intro-list"> 
-      <li>
-        <div class="intro-photo">
-          <img src="/img/columbia.jpg" width=150 height=150>
+      list-style-type: none;
+    }
+    .nav_list {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 10px;
+      padding: 0;
+      overflow: hidden;
+      list-style-type: none;
+    }
+    .nav {
+      float: right;
+    }
+
+    /* hr */
+    hr {
+      border: 0;
+      height: 1px;
+      width: 70%;
+    }    
+    .about hr {
+      background-image: linear-gradient(to right, #333333, #FF9933 25%, #FF9933 75%, #333333 100%);
+    }
+    .education hr {
+      background-image: linear-gradient(to right, #0E2F44, #FF9933 25%, #FF9933 75%, #0E2F44 100%);
+    }
+    .experience hr {
+      background-image: linear-gradient(to right, #F7F7F7, #FF9933 25%, #FF9933 75%, #F7F7F7 100%);
+    }
+    .projects hr {
+      /*background-image: linear-gradient(to right, #F8C471, #FFFFFF 25%, #FFFFFF 75%, #F8C471 100%);*/
+      background-image: linear-gradient(to right, rgba(0,0,0,0), #FF9933 25%, #FF9933 75%, rgba(0,0,0,0) 100%);
+    }
+
+    /* Title */
+    .title_div {
+      background-image: url(/taekb.io/images/ny_background.jpg);
+      /*background-image: url(/taekb.io/images/nyc_background.jpg);
+      background-image: url(/taekb.io/images/laptop-bg.jpg);*/
+      background-size: cover;
+      background-size: 100% 100%;
+      width: 100%;
+      margin: 0;
+    }
+    .title {
+      font-family: 'Sanchez', serif;
+      font-size: 120px;
+      color: #FFFFFF;
+      text-align: center;
+      text-shadow: 2px 2px #333333;
+      padding-top: 300px;
+      padding-bottom: 300px;
+      margin: 0;
+    }
+
+    /* Link */
+    a, a:visited, a:link, a:active {
+      text-decoration: none;
+      font-family: 'Roboto Slab', serif;
+    }
+    .nonwhite {
+      color: white;
+    }
+    .white {
+      color: black;
+    }
+    li.nav a {
+      display: block;
+      color: #333333;
+      text-align: center;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-left: 9px;
+      padding-right: 9px;
+      text-decoration: none;
+    }
+    h2 a {
+      font-size: 35px;
+    }
+
+    /* External Button */
+    .ext_btn {
+      border-radius: 3%;
+      border: solid;
+      border-width: 1px;
+      width: 240px;
+      height: 60px;
+    }
+    img#linkedin {
+      width: 240px;
+      height: 60px;
+      border-color: #0099CC;
+    }
+    img#github {
+      width: 189px;
+      height: 60px;
+      border-color: #333333;
+    }
+
+    /* h2 */
+    h2 {
+      font-family: 'Roboto Slab', serif;
+      margin: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    /* Profile */
+    .profile_list {
+      list-style-type: none;
+      padding: 0;
+      width: 55%;
+    }
+    .profile a {
+      float: left;
+    }
+    .profile p {
+      margin: 20px;
+      display:inline-block;
+      font-family: 'Roboto Slab', sans-serif;
+      overflow: hidden;
+    }
+    .profile_img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      vertical-align: bottom;
+    }
+    .projects {
+      background-color: #0E2F44;
+      background-size: 100% 100%;
+    }
+    .project {
+      width: 65%;
+      height: 250px;
+    }
+    .project a {
+      color: black;
+    }
+    .project p {
+      color: #333333;
+      font-family: 'Exo', sans-serif;
+      width: 65%;
+      margin: 0;
+    }
+    .project_img {
+      display: inline-block;
+      vertical-align: bottom;
+      width: 65%;
+      height: 250px;
+      margin: 0;
+    }
+    .project_info {
+      background-color: white;
+      width: 65%;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      margin: 0;
+    }
+
+    /* About */
+    .about {
+      background-color: #0E2F44;
+      padding-top: 40px;
+      padding-bottom: 100px;
+      color: white;
+    }
+    .about_photo {
+      width: 180px;
+      height: 240px;
+      display: inline-block;
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    #about_photo {
+      width: 180px;
+      height: 240px;
+      vertical-align: bottom;
+      border-radius: 50%;
+    }
+    .about_intro {
+      display: inline-block;
+      width: 80%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .about_intro p {
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+    }
+    #about_intro {
+      font-family: 'Raleway', sans-serif;
+      font-size: 25px;
+    }
+    #about_intro_2 {
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 18px;
+    }
+
+    /* Education */
+    .education {
+      background-color: #333333;
+      padding-top: 40px;
+      padding-bottom: 100px;
+      color: white;
+      font-family: 'Roboto Slab', sans-serif;
+    }
+    .course_list {
+      padding: 0;
+      width: 55%;
+    }
+    .course {
+      text-align: left;
+    }
+
+    /* Experience */
+    .experience {
+      /*background-color: #F9F9F9;*/
+      padding-top: 40px;
+      padding-bottom: 100px;
+      color: black;
+    }
+
+    /* Projects */
+    .projects {
+      /*background-color: #F8C471;*/
+      background-image: url(/taekb.io/images/laptop-bg.jpg);
+      padding-top: 40px;
+      padding-bottom: 100px;
+      color: white;
+    }
+
+    /* Contact */
+    .contact {
+      background-color: #0E2F44;
+      padding-top: 40px;
+    }
+    .contact_img {
+      width: 70px;
+      height: 70px;
+      margin-right: 17px;
+      margin-left: 17px;
+    }
+
+    /* Footer */
+    .footer {
+      font-family: 'Exo', sans-serif;
+      text-align: left;
+      margin: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 50px;
+    }
+    .footer p {
+      color: white;
+      margin: 0px;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav class="nav_bar">
+      <ul class="nav_home">
+        <li class="nav"><a href="#top">taekb.io</a></li>
+      </ul>
+      <ul class="nav_list">
+        <li id="nav_contact" class="nav"><a href="#contact">Contact</a></li>
+        <li id="nav_projects" class="nav"><a href="#projects">Projects</a></li>
+        <li id="nav_experience" class="nav"><a href="#experience">Experience</a></li>
+        <li id="nav_education" class="nav"><a href="#education">Education</a></li>
+        <li id="nav_about" class="nav"><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <!-- Title -->
+    <div id="top" class="title_div">
+      <h1 id="title" class="title">Hi! I'm Daniel.</h1>
+    </div>
+    <!-- About -->
+    <div id="about" class="about" align="center">
+      <h2 align="center"><a href="#about" class="nonwhite">About Me</a></h2>
+      <hr>
+      <div class="about_photo">
+        <img id="about_photo" src="/taekb.io/images/profile.jpg">
+      </div>
+      <div class="about_intro" align="center">
+        <p id="about_intro">"An aspiring engineer driven by intellectual curiosity"</p><br><br><br>
+        <p id="about_intro_2">My name is Daniel Jeong, a sophomore pursuing a Bachelor of Science degree in Computer Science at Columbia University, Class of 2020.<br><br> My areas of interest are: Machine Learning (AI in general), Software Engineering, and Space Exploration.<br><br></p>
+      </div>
+    </div>
+    <!-- Education -->
+    <div id="education" class="education" align="center">
+      <h2 align="center"><a href="#education" class="nonwhite">Education</a></h2>
+      <hr>
+      <br>
+      <br>
+      <ul class="profile_list">
+        <li>
+          <div class="profile" id="columbia">
+            <a href="http://www.columbia.edu"><img class="profile_img" src="/taekb.io/images/columbia.jpg"></a>
+            <p>B.S. Candidate in Computer Science<br>Fu Foundation School of Engineering and Applied Science<br>Columbia University, Class of 2020</p>
+          </div>
+        </li>
+        <br>
+        <br>
+        <li>
+          <div class="profile" id="hafs">
+            <a href="http://hafs.hs.kr"><img class="profile_img" src="/taekb.io/images/hafs.png"></a>
+            <p>High School Diploma<br>International Track (국제과정)<br>Hankuk Academy of Foreign Studies (용인외고), Class of 2016</p>
+          </div>
+        </li>
+        <br>
+        <br>
+      </ul>
+      <h3 align="center">CS-related Courses Taken</h3>
+      <ul class="course_list">
+        <li class="course">[CSEE W3827] Fundamentals of Computer Systems</li>
+        <li class="course">[COMS W3134] Data Structures and Algorithms</li>
+        <li class="course">[MATH UN2010] Linear Algebra</li>
+        <li class="course">[COMS W3203] Discrete Mathematics</li>
+        <li class="course">[COMS W1004] Intro to CS and Programming in Java</li>
+        <li class="course">[ENGI E1006] Intro to Computing for Engineers/Applied Scientists (Python)</li>
+        <li class="course">[ENGI E1102] The Art of Engineering</li>
+      </ul>
+    </div>
+    <!-- Experience -->
+    <div id="experience" class="experience" align="center">
+      <h2 align="center"><a href="#experience" class="white">Experience</a></h2>
+      <hr>
+      <br>
+      <br>
+      <ul class="profile_list">
+        <li>
+          <div class="profile" id="keti">
+            <a href="http://keti.re.kr/main/main.php"><img class="profile_img" src="/taekb.io/images/keti.png"></a>
+            <p>Researcher (July 2017 - Aug. 2017)<br>Artificial Intelligence Research Center<br>KETI (Korea Electronics Technology Institute)</p>
+          </div>
+        </li>
+        <br>
+        <br>
+        <li>
+          <div class="profile" id="csi">
+            <a href="https://columbiaspace.org/"><img class="profile_img" src="/taekb.io/images/csi.png"></a>
+            <p>Mission Director (Feb. 2017 - Present)<br>CubeSat Team (Microsatellite Development)<br>Columbia Space Initiative</p>
+          </div>
+        </li>
+        <br>
+        <br>
+        <li>
+          <div class="profile" id="kyis">
+            <a href="http://www.kyis.or.kr"><img class="profile_img" src="/taekb.io/images/kyis.jpg"></a>
+            <p>Co-Founder & VP (Mar. 2017 - Present)<br>KYIS (Korean Youth Informatics Society)</p>
+          </div>
+        </li>
+        <br>
+        <br>
+        <li>
+          <div class="profile" id="jrc">
+            <a href=""><img class="profile_img" src="/taekb.io/images/jrc.png"></a>
+            <p>Software Engineering Intern (May 2016 - July 2016)<br>JRC Robot Inc.</p>
+          </div>
+        </li>
+      </ul>
+      <br>
+      <br>
+    </div>
+    <!-- Projects -->
+    <div id="projects" class="projects" align="center">
+      <h2 align="center"><a href="#projects" class="nonwhite">Projects</a></h2>
+      <hr>
+      <br>
+      <br>
+      <div class="project">
+        <img class="project_img" src="/taekb.io/images/website.png">
+        <div class="project_info">
+          <a class="project_title" href="https://github.com/taekb/taekb.github.io">Personal Website</a>
+          <p class="project_info">Github Repository for Personal Website</p>
         </div>
-      </li>
-      <li>
-        <div class="intro-intro">
-          <p align="center">I am a rising sophomore pursuing a Bachelor of Science degree in Computer Science at Columbia University, Class of 2020.</br></br> My current areas of interest are: Machine Learning (and AI in general), Software Engineering, and Space Exploration.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <footer>
-    <ul>
-      <li><a href="mailto:dpj2108@columbia.edu">daniel.jeong@columbia.edu</a></li>
-      <li><a href="https://github.com/taekb">My Github Page</a></li>
-    </ul>
-  </footer>
-</body>
+      </div>
+      <br>
+      <br>
+      <!--
+      <div class="project">
+        <a href="https://github.com/taekb/gcloud_speech_voice_recorder"><img class="project_img" src="/taekb.io/images/recorder.png"></a>
+        <p class="project_info">Voice Recorder and Transcriber</p>
+      </div>
+      -->
+    </div>
+    <div id="contact" class="contact" align="center">
+      <br>
+      <br>
+      <br>
+      <a href="https://www.linkedin.com/in/daniel-jeong-8064b311b/"><img class="contact_img" style="display:inline-block" src="/taekb.io/images/linkedin-logo.png"></a>
+      <a href="mailto:daniel.jeong@columbia.edu"><img class="contact_img" style="display:inline-block" src="/taekb.io/images/envelope.png"></a>
+      <a href="https://github.com/taekb"><img class="contact_img" style="display:inline-block" src="/taekb.io/images/github-logo.png"></a>
+      <br>
+      <br>
+      <div class="footer">
+        <p>2017, taekb.io | Created by Daniel Jeong, Columbia SEAS '20</p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/taekb.io/js/main.js" type="text/javascript"></script>
+  </body>
 </html>
