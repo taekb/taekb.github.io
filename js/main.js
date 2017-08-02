@@ -1,4 +1,4 @@
-$(window).scroll(function() {
+/*$(window).scroll(function() {
 	var windowHeight = $(window).height();
 	var scrollBottom = $(this).scrollTop() + windowHeight;
 
@@ -14,7 +14,7 @@ $(window).scroll(function() {
 	if (scrollTop > (expTop + expHeight - windowHeight)) {
 		$('.experience h2, ul').fadeIn(1000);
 	}
-});
+});*/
 
 function show_text() {
 	$('.title').hide();
