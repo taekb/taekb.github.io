@@ -12,12 +12,12 @@ Copyright 2017 Daniel Jeong (@taekb)
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-*/   
+*/  
 
 function adjust_text() {
 	window_width = $(window).width();
 	if (window_width <= 1000) {
-		adjust_small();
+		adjust_small(window_width);
 	}
 	else {
 		adjust_large();
@@ -29,25 +29,25 @@ function adjust_large() {
 	$('.about_photo').css('margin-bottom', '0');
 	$('.profile a').css('float', 'left');
 	$('.profile p').css('display', 'inline-block');
+	$('.nav_bar').css('font-size', 'initial');
 }
 
-function adjust_small() {
+function adjust_small(width) {
 	$('.about_photo').css('margin-left', '0');
 	$('.about_photo').css('margin-bottom', '20px')
 	$('.profile a').css('float', 'initial');
 	$('.profile p').css('display', 'block');
+	if (width <= 540) {
+		$('.nav_bar').css('font-size', '3px');
+	}
+	else {
+		$('.nav_bar').css('font-size', 'initial');
+	}
 }
 
 window.onload = adjust_text;
 
-$(window).resize(function() {
-	if ($(window).width() <= 600) {
-		adjust_small();
-	}
-	else {
-		adjust_large();
-	}
-});
+$(window).resize(adjust_text);
 
 function show_text() {
 	$('.title').hide();
