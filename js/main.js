@@ -38,7 +38,7 @@ function adjust_small(width) {
 	$('.profile a').css('float', 'initial');
 	$('.profile p').css('display', 'block');
 	if (width <= 540) {
-		$('.nav_bar').css('font-size', '10px');
+		$('.nav_bar').css('font-size', '6px');
 	}
 	else {
 		$('.nav_bar').css('font-size', 'initial');
