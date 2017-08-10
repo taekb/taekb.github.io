@@ -25,20 +25,48 @@ function adjust_text() {
 }
 
 function adjust_large() {
-	$('.about_photo').css('margin-left', '30px');
-	$('.about_photo').css('margin-bottom', '0');
+	// Adjust title
+	$('.title').css({
+		'font-size': '120px',
+		'padding-top': '300px',
+		'padding-bottom': '300px'
+	});
+
+	// Adjust about_photo
+	$('.about_photo').css({
+		'margin-left': '30px',
+		'margin-bottom': '0'
+	});
+
+	// Adjust profile lists
 	$('.profile a').css('float', 'left');
 	$('.profile p').css('display', 'inline-block');
+
+	// Adjust navigation bar
 	$('.nav_bar').css('font-size', 'initial');
 }
 
 function adjust_small(width) {
-	$('.about_photo').css('margin-left', '0');
-	$('.about_photo').css('margin-bottom', '20px')
+	// Adjust title
+	$('.title').css({
+		'font-size': '55px',
+		'padding-top': '150px',
+		'padding-bottom': '150px'
+	});
+
+	// Adjust about_photo
+	$('.about_photo').css({
+		'margin-left': '0',
+		'margin-bottom': '20px'
+	});
+
+	// Adjust profile lists
 	$('.profile a').css('float', 'initial');
 	$('.profile p').css('display', 'block');
+
+	// Adjust navigation bar
 	if (width <= 540) {
-		$('.nav_bar').css('font-size', '6px');
+		$('.nav_bar').css('font-size', '3px');
 	}
 	else {
 		$('.nav_bar').css('font-size', 'initial');
