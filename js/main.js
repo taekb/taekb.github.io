@@ -1,26 +1,42 @@
-/*$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scrollBottom = $(this).scrollTop() + windowHeight;
-
-	var eduTop = $('.education').offset().top;
-	var eduHeight = $('.education').outerHeight();
-	if (scrollBottom > eduTop) {
-		alert('education');
-		//$('.education h2').fadeIn(2500);
+function adjust_text() {
+	window_width = $(window).width();
+	if (window_width <= 1000) {
+		adjust_small();
 	}
-
-	var expTop = $('.experience').offset().top;
-	var expHeight = $('.experience').outerHeight();
-	if (scrollTop > (expTop + expHeight - windowHeight)) {
-		$('.experience h2, ul').fadeIn(1000);
+	else {
+		adjust_large();
 	}
-});*/
+}
+
+function adjust_large() {
+	$('.about_photo').css('margin-left', '30px');
+	$('.about_photo').css('margin-bottom', '0');
+	$('.profile a').css('float', 'left');
+	$('.profile p').css('display', 'inline-block');
+}
+
+function adjust_small() {
+	$('.about_photo').css('margin-left', '0');
+	$('.about_photo').css('margin-bottom', '20px')
+	$('.profile a').css('float', 'initial');
+	$('.profile p').css('display', 'block');
+}
+
+window.onload = adjust_text;
+
+$(window).resize(function() {
+	if ($(window).width() <= 600) {
+		adjust_small();
+	}
+	else {
+		adjust_large();
+	}
+});
 
 function show_text() {
 	$('.title').hide();
 	$('#about_intro').hide();
 	$('#about_intro_2').hide();
-	//$('.education h2').hide();
 
 	$('.title').fadeIn(1000);
 	$('#about_intro').fadeIn(2500);
