@@ -66,7 +66,7 @@ function adjust_small(width) {
 
 	// Adjust navigation bar
 	if (width <= 540) {
-		$('.nav_bar').css('font-size', '3px');
+		$('.nav_bar').css('font-size', '6px');
 	}
 	else {
 		$('.nav_bar').css('font-size', 'initial');
