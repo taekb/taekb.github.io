@@ -73,7 +73,7 @@ function adjust_small(width) {
 	}
 }
 
-window.onload = adjust_text;
+document.onload = adjust_text;
 
 $(window).resize(adjust_text);
 
