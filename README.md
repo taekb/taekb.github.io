@@ -1,3 +1,3 @@
 # taekb.github.io
 
-Personal Website built using HTML, CSS, and Javascript.
+djeong.com | Daniel Jeong, Columbia SEAS '20.
