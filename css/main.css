@@ -89,6 +89,9 @@ a, a:visited, a:link, a:active {
   text-decoration: none;
   font-family: 'Roboto Slab', serif;
 }
+a:visited {
+  color: inherit;
+}
 .nonwhite {
   color: white;
 }
