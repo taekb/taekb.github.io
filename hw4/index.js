@@ -12,7 +12,11 @@ const examples = {
   'example2':
       'test',
   'example3':
+<<<<<<< HEAD
       'test'
+=======
+      'Well, Honor is the subiect of my Story.'
+>>>>>>> 6c4abc08ae977295fb155399f04e166968d6ce2d
 };
 
 function status(statusText) {
