@@ -8,11 +8,11 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'I suppose you have heard of the handsome letter Mr . Frank Churchill has written to Mrs . Weston?',
+      'test',
   'example2':
-      'So the little Gingerbread Boy jumped on the fox tail, and the fox began to swim the river.',
+      'test',
   'example3':
-      'Well, Honor is the subiect of my Story: I cannot tell, what you and other men Thinke of this life: But for my single selfe, I had as liefe not be, as liue to be In awe of such a Thing, as I my selfe.'     
+      'test'
 };
 
 function status(statusText) {
