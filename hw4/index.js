@@ -8,15 +8,11 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'test',
+      'I suppose you have heard of the handsome letter Mr . Frank Churchill has written to Mrs . Weston?',
   'example2':
-      'test',
+      'So the little Gingerbread Boy jumped on the fox tail, and the fox began to swim the river.',
   'example3':
-<<<<<<< HEAD
-      'test'
-=======
       'Well, Honor is the subiect of my Story.'
->>>>>>> 6c4abc08ae977295fb155399f04e166968d6ce2d
 };
 
 function status(statusText) {
