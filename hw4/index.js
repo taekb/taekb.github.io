@@ -12,7 +12,7 @@ const examples = {
   'example2':
       'So the little Gingerbread Boy jumped on the fox tail, and the fox began to swim the river.',
   'example3':
-      'The executioners argument was, that you couldnt cut off a head unless there was a body to cut it off from: that he had never had to do such a thing before, and he wasnt going to begin at HIS time of life.'
+      'Can you play croquet ?'
 };
 
 function status(statusText) {
