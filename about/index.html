@@ -9,6 +9,7 @@
 		<meta property="og:url" content="website">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/card.css">
 		<link rel="icon" type="image/png" href="/images/favicon-alt.png"
 		sizes="32x32">
 		<style type="text/css">
@@ -55,6 +56,12 @@
 				width: 60%;
 				border-radius: 15px;
 			}
+			#work h3 {
+				font-family: 'Ubuntu', sans-serif;
+			}
+			#work p {
+				font-family: 'Roboto Slab', sans-serif;
+			}
 			@media (max-width: 768px) {
 				#profile_photo {
 					height: 45%;
@@ -64,6 +71,8 @@
 					margin-top: 30px;
 				}
 			}
+
+
 		</style>
 	</head>
 	<body>
@@ -102,20 +111,57 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container" id="about">
-			<div class="row" style="border:none; background:white;">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="img_column">
-					<img class="img-responsive center-block" src="/images/profile.jpg" id="profile_photo"/>
+		<div class="container">
+			<div class="row" style="border:none; background:white; text-align:center" id="about">
+				<div class="col-lg-1 col-md-1">
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="intro_column">
+				<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12" id="img_column">
+					<!-- img-responsive pull-right -->
+					<img class="img-responsive center-block" src="../images/profile_jpl.jpg" id="profile_photo"/>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="intro_column">
 					<h3>AI Enthusiast, Researcher, Engineer</h3>
 					<hr>
 					<p>My name is Daniel Jeong, a junior pursuing a Bachelor of Science degree in <strong>Computer Science</strong> at <strong>Columbia University, Class of 2020</strong>.<br><br>My research interests lie in <strong>Machine Learning, Computer Vision, Computational Neuroscience, Space Exploration, Software Engineering</strong>.</p>
 				</div>
+				<div class="col-lg-2 col-md-2">
+				</div>
 			</div>
-			<div class="row" style="border:none; background:white;">
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-
+			<div class="row" style="border:none; background:white; margin-top:50px; text-align:center" id="work">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h3>Places I've Worked</h3>
+					<hr>
+					<div class="col-lg-3 col-md-3">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="card card-default">
+							<a href="https://twitter.com/blei_lab?lang=en" class="card-link">
+								<span class="card-img">
+									<img src="../images/blei_lab.jpg" alt="Blei Lab" class="img-responsive">
+								</span>
+								<span class="card-body">
+									<span class="h3 heading">Blei Lab</span>
+									<p>Undergraduate Research Assistant</p>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="card card-default">
+							<a href="https://twitter.com/blei_lab?lang=en" class="card-link">
+								<span class="card-img">
+									<img src="../images/nasa_original.png" alt="JPL" class="img-responsive">
+								</span>
+								<span class="card-body">
+									<span class="h3 heading">NASA JPL</span>
+									<p>Undergraduate Research Assistant</p>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3">
+					</div>
+				</div>
 			</div>
 		</div>
 		<footer class="page-footer font-small black pt-4">
