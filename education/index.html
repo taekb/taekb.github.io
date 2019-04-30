@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Education</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="author" content="Daniel Jeong">
+		<meta property="og:url" content="website">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/card.css">
+		<link rel="icon" type="image/png" href="/images/favicon-alt.png"
+		sizes="32x32">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+			@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+			@import url('https://fonts.googleapis.com/css?family=Righteous|Ubuntu');
+			.navbar {
+				-webkit-border-radius: 0;
+    			-moz-border-radius: 0;
+    			border-radius: 0;
+    			margin-bottom: 0;
+    			border-bottom-color: #E3E4E4;
+    			font-family: 'Ubuntu', sans-serif;
+			}
+			.navbar-brand {
+				font-family: 'Righteous', cursive;
+			}
+			.navbar li {
+				font-family: 'Ubuntu', sans-serif;
+			}
+			.icon-bar {
+				background: #000;
+			}
+			#title {
+				/* background-color: #0E2F44;*/
+				background-color: #FFF;
+				color: #000;
+				text-align: center;
+				font-family: 'Roboto Slab', sans-serif;
+				margin-top: 100px;
+				/*justify-content: center;*/
+			}
+			#edu_photo_row {
+				margin-top: 100px;
+			}
+			#edu_photo {
+				border-radius: 50%;
+			}
+			#edu_desc {
+				text-align: center;
+				font-family: 'Ubuntu', sans-serif;
+			}
+			#edu_desc a:hover {
+				color: blue;
+			}
+			@media (max-width: 768px) {
+				#edu_photo {
+					height: 45%;
+					width: 45%;
+				}
+				#edu_desc {
+					margin-top: 10px;
+				}
+			}
+			@media (min-width: 768px) {
+				#edu_desc {
+					margin-top: 20px;
+				}
+			}
+			#course_row {
+				margin-top: 60px
+			}
+			#course_row h3 {
+				font-family: 'Ubuntu', sans-serif;
+			}
+			#course_row hr {
+				width: 70%;
+			}
+			#course_list_row {
+				font-family: 'Ubuntu', sans-serif;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!-- Top Navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<!-- Navigation Bar Header -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/index_beta.html">taekb</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/about">About</a></li>
+						<li><a href="/education">Education</a></li>
+						<li><a href="/experience">Experience</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="/projects#tfa">TFA-BOLD5000</a></li>
+								<li><a href="/projects#cosmic">COSMIC</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Organizations<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#cdss">CSI</a></li>
+								<li><a href="#csi">CDSS</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row" style="border:none; background:white" id="edu_photo_row">
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-3">
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+					<a href="http://www.columbia.edu" target="_blank"><img class="img-responsive center-block" src="../images/columbia.jpg" id="edu_photo"/></a>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-3">
+				</div>
+			</div>
+			<div class="row" style="border:none; background:white" id="edu_desc_row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="edu_desc">
+					<p>B.S. in Computer Science<br>Fu Foundation School of Engineering and Applied Science<br>Columbia University, Class of 2020</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				</div>
+			</div>
+			<div class="row" style="border:none; background:white" id="edu_photo_row">
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-3">
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+					<a href="http://hafs.hs.kr" target="_blank"><img class="img-responsive center-block" src="../images/hafs.png" id="edu_photo"/></a>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-3">
+				</div>
+			</div>
+			<div class="row" style="border:none; background:white" id="edu_desc_row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="edu_desc">
+					<p>High School Diploma<br>Hankuk Academy of Foreign Studies, Class of 2016</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				</div>
+			</div>
+		</div>
+		<div class="row" id="course_row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h3 align="center">Relevant Coursework</h3>
+				<hr>
+			</div>
+		</div>
+		<div class="row" id="course_list_row">
+			<div class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10">
+				<ul>
+					<li class="course">[STAT G6701] Foundations of Graphical Models</li>
+        			<li class="course">[COMS W4995] Machine Learning for Functional Genomics</li>
+        			<li class="course">[COMS W4731] Computer Vision</li>
+        			<li class="course">[COMS W4705] Natural Language Processing</li>
+        			<li class="course">[MATH W4062] Modern Analysis II</li>
+        			<li class="course">[MATH W4061] Modern Analysis I</li>
+        			<li class="course">[MATH W2500] Analysis and Optimization</li>
+        			<li class="course">[STAT G4204] Statistical Inference</li>
+        			<li class="course">[EECS E6720] Bayesian Models for Machine Learning</li>
+        			<li class="course">[COMS W4995] Applied Deep Learning</li>
+        			<li class="course">[COMS W6998] Computation and the Brain</li>
+        			<li class="course">[CSOR W4231] Analysis of Algorithms I</li>
+        			<li class="course">[COMS W4771] Machine Learning</li>
+        			<li class="course">[COMS W3261] Computer Science Theory</li>
+        			<li class="course">[COMS W3157] Advanced Programming (C/UNIX/C++)</li>
+        			<li class="course">[CSEE W3827] Fundamentals of Computer Systems</li>
+        			<li class="course">[COMS W3134] Data Structures in Java</li>
+        			<li class="course">[MATH U2010] Linear Algebra</li>
+        			<li class="course">[STAT U4001] Probability & Statistics</li>
+        			<li class="course">[COMS W3203] Discrete Mathematics</li>
+        			<li class="course">[COMS W1004] Java</li>
+        			<li class="course">[ENGI E1006] Python</li>
+        			<li class="course">[ENGI E1102] The Art of Engineering</li>
+        			<li class="course">[PSYC U1010] Mind, Brain and Behavior</li>
+        		</ul>
+        	</div>
+        	<div class="col-lg-2 col-md-3 col-sm-2 col-xs-1">
+			</div>
+		</div>
+		<footer class="page-footer font-small black pt-4">
+			<div class="container-fluid text-center text-md-left" style="margin-top: 100px">
+				<p>2019, djeong.com | Daniel Jeong, Columbia SEAS '20</p>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="/js/main_beta.js" type="text/javascript"></script>
+	</body>
+</html>
