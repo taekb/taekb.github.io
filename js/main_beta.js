@@ -1,5 +1,5 @@
 let subnames = ['Machine Learning + Genomics',
-                'Machine Learning + Neuroscience'
+                'Machine Learning + Neuroscience',
                 'Machine Learning & AI'];
 
 function show_text() {
