@@ -13,8 +13,6 @@ $(document).ready(function() {
 // Cycle through subheader
 var idx = 0;
 setInterval(function() {
-    $('#subname').delay(2000).fadeOut(1000);
-    $('#subname').text(subnames[idx++ % subnames.length]);
-    $('#subname').fadeIn(1000);
+    $('#subname').fadeOut(1000).text(subnames[idx++ % subnames.length]).fadeIn(1000).delay(2000);
 }, 4100);
 
