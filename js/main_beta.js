@@ -18,13 +18,14 @@ function update_text() {
     }
 }
 
-function process_text() {
-    show_text();
-    update_text();
-}
-
 // Prepare document
 $(document).ready(show_text());
 
-setInterval(update_text(), 1000);
+// Cycle through subheader
+var idx = 0;
+setInterval(function() {
+    $('#subname').delay(1000).fadeOut(1000);
+    $('#subname').text(subnames[idx++ % subnames.length]);
+    $('#subname').fadeIn(1000);
+}, 1000);
 
