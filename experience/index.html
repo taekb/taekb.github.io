@@ -16,6 +16,7 @@
 			@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 			@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 			@import url('https://fonts.googleapis.com/css?family=Righteous|Ubuntu');
+			@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 			.navbar {
 				-webkit-border-radius: 0;
     			-moz-border-radius: 0;
@@ -33,15 +34,6 @@
 			.icon-bar {
 				background: #000;
 			}
-			#title {
-				/* background-color: #0E2F44;*/
-				background-color: #FFF;
-				color: #000;
-				text-align: center;
-				font-family: 'Roboto Slab', sans-serif;
-				margin-top: 100px;
-				/*justify-content: center;*/
-			}
 			#exp_photo_row {
 				margin-top: 100px;
 			}
@@ -49,7 +41,7 @@
 				border-radius: 50%;
 			}
 			#exp_desc {
-				font-family: 'Ubuntu', sans-serif;
+				font-family: 'Quicksand', sans-serif;
 			}
 			#exp_desc a:hover {
 				color: blue;
@@ -68,19 +60,9 @@
 					margin-top: 20px;
 				}
 			}
-			#course_row {
-				margin-top: 60px
+			#footer {
+				font-family: 'Quicksand', sans-serif;
 			}
-			#course_row h3 {
-				font-family: 'Ubuntu', sans-serif;
-			}
-			#course_row hr {
-				width: 70%;
-			}
-			#course_list_row {
-				font-family: 'Ubuntu', sans-serif;
-			}
-
 		</style>
 	</head>
 	<body>
@@ -94,7 +76,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/">taekb</a>
+					<a class="navbar-brand" href="/">Home</a>
 				</div>
 				<div class="collapse navbar-collapse" id="navbar">
 					<ul class="nav navbar-nav navbar-right">
@@ -151,7 +133,6 @@
                         <li>Implemented self-collision checking functionality for protein unfolding dataset generation</li>
                         <li><b>Published:</b> <i>I. Drori, D. Thaker, A. Srivatsa, D. Jeong, Y. Wang, L. Nan, F. Wu, D. Leggas, J. Lei, W. Lu, W. Fu, Y. Gao, S. Karri, A. Kannan, A. Moretti, C. Keasar, I. Pe'er.</i> "Protein structure prediction with deep learning representations." <i>NeurIPS Learning Meaningful Representations of Life</i>, 2019. (<a href="https://github.com/idrori/cu-tsp" target="_blank">GitHub</a>)</li>
                         <li><b>Published:</b> <i>I. Drori, D. Thaker, A. Srivatsa, D. Jeong, Y. Wang, L. Nan, F. Wu, D. Leggas, J. Lei, W. Lu, W. Fu, Y. Gao, S. Karri, A. Kannan, A. Moretti, C. Keasar, I. Pe'er.</i> "Accurate protein structure prediction by embeddings and deep learning representations." <i>Machine Learning in Computational Biology</i>, 2019. (<a href="https://arxiv.org/abs/1911.05531" target="_blank">arXiv</a>)</li>
-                        <li><b>Submitted:</b> <i>I. Drori, D. Thaker, A. Srivatsa, D. Jeong, Y. Wang, L. Nan, F. Wu, D. Leggas, J. Lei, W. Lu, W. Fu, Y. Gao, S. Karri, A. Kannan, A. Moretti, M. AlQuraishi, C. Keasar, I. Pe'er.</i> "Accurate protein structure prediction by embeddings and deep learning representations." <i>International Conference on Research in Computational Molecular Biology</i>, 2020.</li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-1">
@@ -177,7 +158,7 @@
 						<li>Developed pipeline for large-scale processing of arXiv data for equation embedding feature extraction</li>
 						<li>Evaluated LDA, doc2vec topic models to optimize research paper recommendation capabilities</li>
                         <li>Integrated frontend & backend service modules and implemented system health monitoring features</li>
-                        <li><b>Preparing:</b> <i>K. Krstovski, D. Jeong, D.M. Blei.</i> "ArXivLab: A Platform for Developing and Evaluating Exploratory Tools for the Scientific Literature."</li>
+                        <li><b>Preparing:</b> <i>K. Krstovski, D. Jeong, D.M. Blei.</i></li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-1">
@@ -237,6 +218,11 @@
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-8 col-xs-10" id="edu_desc">
 					<h3>Columbia Engineering</h3>
+					<h4>COMS 4995: Applied Deep Learning (Joshua Gordon, Spring 2020)</h4>
+                    <p>Teaching Assistant (Jan. 2020 - May 2020)</p>
+                    <ul>
+                        <li>Held weekly office hours, answering questions online, graded assignments and exams</li>
+                    </ul>
                     <h4>COMS 6998: Deep Learning Systems (Dr. Parijat Dube, Fall 2019)</h4>
                     <p>Teaching Assistant (Sep. 2019 - Dec. 2019)</p>
                     <ul>
@@ -296,16 +282,16 @@
 					<p>Software Engineering Intern (May 2016 - July 2016)</p>
 					<ul>
 						<li>Worked as an Android application developer and database administrator</li>
-						<li>Set up a NAS server and implemented an Android mobile app for remote access for the client firm</li>
+						<li>Set up a NAS server and implemented an Android mobile app for remote access by client firm</li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-1">
 				</div>
 			</div>
 		</div>
-		<footer class="page-footer font-small black pt-4">
+		<footer class="page-footer font-small black pt-4" id="footer">
 			<div class="container-fluid text-center text-md-left" style="margin-top: 100px">
-				<p>2019, djeong.com | Daniel Jeong, Columbia SEAS '20</p>
+				<p>djeong.com | PhD @ CMU SCS | BS @ Columbia '20</p>
 			</div>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
