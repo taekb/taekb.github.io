@@ -25,4 +25,8 @@ function process_text() {
     update_text();
 }
 
+// Prepare document
 $(document).ready(show_text());
+
+update_text();
+
