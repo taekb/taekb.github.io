@@ -11,12 +11,10 @@ function show_text() {
 }
 
 function update_text() {
-    while (true) {
-        for (i = 0; i < 3; i++) {
-            $('#subname').delay(1200).fadeOut(1000);
-            $('#subname').text(subnames[i]);
-            $('#subname').fadeIn(1000);
-        }
+    for (i = 0; i < 3; i++) {
+        $('#subname').delay(1000).fadeOut(1000);
+        $('#subname').text(subnames[i]);
+        $('#subname').fadeIn(1000);
     }
 }
 
@@ -28,5 +26,5 @@ function process_text() {
 // Prepare document
 $(document).ready(show_text());
 
-update_text();
+setInterval(update_text(), 1000);
 
