@@ -13,10 +13,14 @@ $(document).ready(function() {
 // Cycle through subheader
 var idx = 0;
 setInterval(function() {
-    setTimeout(function() {
-        $('#subname').fadeOut(1000);
-    }, 3000);
-    $('#subname').text(subnames[idx++ % subnames.length]);
-    $('#subname').fadeIn(1000);
-}, 5100);
+    let new_subname = subnames[idx++ % subnames.length];
+
+    $('#subname').animate({
+        opacity: 0
+    }, 1000, function() {
+        $('#subname').text(new_subname).animate({
+            opacity: 1
+        }, 1000);
+    });
+}, 4000);
 
