@@ -1,4 +1,4 @@
-let subnames = ['Machine Learning + Genomics',
+var subnames = ['Machine Learning + Genomics',
                 'Machine Learning + Neuroscience',
                 'Machine Learning & AI'];
 
