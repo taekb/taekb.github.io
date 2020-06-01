@@ -25,4 +25,4 @@ function process_text() {
     update_text();
 }
 
-$(document).ready(process_text());
+$(document).ready(show_text());
