@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Publications</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="author" content="Daniel Jeong">
+		<meta property="og:url" content="website">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/card.css">
+		<link rel="icon" type="image/png" href="/images/favicon-brain.png"
+		sizes="32x32">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+			@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+			@import url('https://fonts.googleapis.com/css?family=Righteous|Ubuntu');
+			@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+			.navbar {
+				-webkit-border-radius: 0;
+    			-moz-border-radius: 0;
+    			border-radius: 0;
+    			margin-bottom: 0;
+    			border-bottom-color: #E3E4E4;
+    			color: #4390E6;
+			}
+			.navbar-brand {
+				font-family: 'Poiret One', cursive;
+			}
+			.navbar li {
+				font-family: 'Quicksand', sans-serif;
+			}
+			.icon-bar {
+				background: #000;
+			}
+			#proj_photo_row {
+				margin-top: 100px;
+			}
+			#exp_photo {
+				border-radius: 50%;
+			}
+			#footer {
+				font-family: 'Quicksand', sans-serif;
+			}
+			.card {
+				min-height: 100%;
+			}
+			#proj_list_row > [class*='col-'] {
+  				display: flex;
+  				flex-direction: column;
+			}
+			.proj_label {
+				height: 20px;
+				width: 20px;
+				margin-right: 5px;
+			}
+			.card-body a:hover {
+				opacity: 0.6;
+			}
+			@media (min-width: 768px) {
+				#proj_list_row {
+					margin: 30px;
+					display: -webkit-box;
+  					display: -webkit-flex;
+  					display: -ms-flexbox;
+  					display: flex;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Top Navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<!-- Navigation Bar Header -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">taekb</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/about">About</a></li>
+						<li><a href="/education">Education</a></li>
+						<li><a href="/experience">Experience</a></li>
+						<li><a href="/project">Projects</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container" style="font-family: 'Quicksand', sans-serif;">
+			<div class="row" style="border:none; background:white; margin-top: 30px; margin-bottom: 70px" align="center">
+				<h1>Publications</h1>
+			</div>
+            <div class="row" style="border:none; background:white" id="proj_list_row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="card card-default" height="100%">
+                        <div class="card-body">
+                            <img src="../images/brain.png" class="proj_label">
+                            <img src="../images/github-logo.png" class="proj_label">
+                            <h4 class="card-title">Accurate Protein Structure Prediction by Embeddings and Deep Learning Representations</h4>
+                            <hr>
+                            <p>I. Drori, D. Thaker, A. Srivatsa, D. Jeong, Y. Wang, L. Nan, F. Wu, D. Leggas, J. Lei, W. Lu, W. Fu, Y. Gao, S. Karri, A. Kannan, A. Moretti, C. Keasar, I. Pe'er.<br><i>Machine Learning in Computational Biology (MLCB) 2019</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="row" style="border:none; background:white" id="proj_list_row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="card card-default" height="100%">
+						<div class="card-body">
+							<img src="../images/satellite.jpg" class="proj_label">
+							<a href="https://github.com/taekb/cnn_pose_estimation" target="_blank"><img src="../images/github-logo.png" class="proj_label"></a>
+							<h4 class="card-title">Pose Estimation</h4>
+							<hr>
+							<p>CNNs for spacecraft relative pose estimation: ASPP + Homoscedastic Uncertainty Loss Weighting / Cross-Domain Spherical Embedding / Transfer Learning (Keras + TensorFlow)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="card card-default">
+						<div class="card-body">
+							<img src="../images/newspaper.png" class="proj_label">
+							<a href="https://github.com/taekb/lda_cavi" target="_blank"><img src="../images/github-logo.png" class="proj_label"></a>
+							<h4 class="card-title">LDA-CAVI</h4>
+							<hr>
+							<p>Coordinate Ascent Variational Inference (CAVI) for Latent Dirichlet Allocation (LDA)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="card card-default" height="100%">
+						<div class="card-body">
+							<img src="../images/brain.png" class="proj_label">
+							<a href="https://github.com/taekb/tfabold5000" target="_blank"><img src="../images/github-logo.png" class="proj_label"></a>
+							<a href="https://www.dropbox.com/s/g10i1lixsh3mqgf/Bold5000_TFA_Report.pdf?dl=0" target="blank"><img src="../images/dropbox.png" class="proj_label"></a>
+							<h4 class="card-title">TFA-BOLD5000</h4>
+							<hr>
+							<p>Clustering Methods and Topographic Factor Analysis (TFA) on the BOLD5000 fMRI dataset for study of correlation between image semantics and cortical regions</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="border:none; background:white" id="proj_list_row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="card card-default">
+						<div class="card-body">
+							<img src="../images/mars.jpeg" class="proj_label">
+							<img src="../images/dropbox.png" class="proj_label">
+							<h4 class="card-title">COSMIC</h4>
+							<hr>
+							<p>Content-based Onboard Summarization to Monitor Infrequent Change (COSMIC): Random Forest and FCN-based Martian Swiss cheese detection</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="card card-default">
+						<div class="card-body">
+							<img src="../images/mic.png" class="proj_label">
+							<a href="https://github.com/taekb/gcloud_speech_voice_recorder" target="_blank"><img src="../images/github-logo.png" class="proj_label"></a>
+							<h4 class="card-title">Speech-to-Text Web App</h4>
+							<hr>
+							<p>Flask-based web application that records sound (as PCM/WAV) and converts speech to text via Google Cloud Speech API</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="card card-default" height="100%">
+						<div class="card-body">
+							<img src="../images/newspaper.png" class="proj_label">
+							<a href="https://www.dropbox.com/s/9hi2qx6zae6vh4i/Daniel%20Jeong%20-%20KETI%20FNC%20Seminar.pdf?dl=0" target="blank"><img src="../images/dropbox.png" class="proj_label"></a>
+							<h4 class="card-title">Fake News Stance Detection Seminar</h4>
+							<hr>
+							<p>Seminar on stance detection models involving MLPs, CNNs, gradient-boosted Decision Trees, etc.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="border:none; background:white" id="proj_list_row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="card card-default">
+						<div class="card-body">
+							<img src="../images/med_heart.png" class="proj_label">
+							<a href="https://github.com/taekb/medical3D_display" target="_blank"><img src="../images/github-logo.png" class="proj_label"></a>
+							<h4 class="card-title">Medical 3D Display</h4>
+							<hr>
+							<p>Visual demo of interactive side-by-side view of the human heart, one generated by a trained AI engine and the other from real MRI data</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="card card-default">
+						<div class="card-body">
+							<img src="../images/newspaper.png" class="proj_label">
+							<a href="https://github.com/taekb/news_crawler" target="_blank"><img src="../images/github-logo.png" class="proj_label"></a>
+							<h4 class="card-title">Daum News Crawler</h4>
+							<hr>
+							<p>Web crawler that collects Daum News article data, implemented as part of a project for fake news detection engine development</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				</div>
+			</div>
+		</div>
+		<footer class="page-footer font-small black pt-4" id="footer">
+			<div class="container-fluid text-center text-md-left" style="margin-top: 100px">
+				<p>djeong.com | PhD @ CMU SCS | BS @ Columbia '20</p>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="/js/main_beta.js" type="text/javascript"></script>
+	</body>
+</html>
