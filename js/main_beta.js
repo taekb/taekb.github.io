@@ -1,6 +1,6 @@
 var subnames = ['ML + Genomics',
                 'ML + Neuroscience',
-                'Machine Learning & AI'];
+                'ML + Statistics'];
 
 // Prepare document
 $(document).ready(function() {
