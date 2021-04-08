@@ -1,3 +1,3 @@
 # taekb.github.io
 
-djeong.com | Daniel Jeong, Columbia SEAS '20.
+djeong.com | Daniel Jeong, PhD @ CMU SCS, Columbia CS '20.
