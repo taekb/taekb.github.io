@@ -1,5 +1,5 @@
-var subnames = ['ML + Genomics',
-                'ML + Neuroscience',
+var subnames = ['ML + Robustness',
+                'ML + Healthcare',
                 'ML + Statistics'];
 
 // Prepare document
