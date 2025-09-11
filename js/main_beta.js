@@ -1,6 +1,6 @@
-var subnames = ['ML + Robustness',
-                'ML + Healthcare',
-                'ML + Statistics'];
+var subnames = ['ML + Multimodality',
+                'ML + Robustness',
+                'ML + Healthcare'];
 
 // Prepare document
 $(document).ready(function() {
